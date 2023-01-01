@@ -16,6 +16,13 @@
   <script async type="text/javascript" src="js/bulma.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
   <script src="js/currentYear.js" async></script>
+  <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+  <script>
+    function loadGoogleTranslate(){
+      new google.translate.TranslateElement("google_element");
+    }
+  </script>
+  <link rel="stylesheet" type="text/css" href="css/google-translate.css">
 </head>
 
 <body>
@@ -55,6 +62,7 @@
           </span>
           <span>Contact</span>
         </a>
+        <div class="navbar-item" id="google_element"></div>
       </div>
     </div>
   </nav>
@@ -77,12 +85,14 @@
   <section class="section" id="about">
     <!-- Title -->
     <div class="section-heading">
-      <h3 class="title is-2">Présentation</h3>
+      <h3 class="title is-2">A propos de moi</h3>
       <div class="container">
         <p>
           <h3>
-            Salut ! Je suis <strong>Ivan APEDO</strong>. Étudiant en ingénierie informatique et développeur fullstack web/mobile. 
-            Le monde de la technologie me fascine énormément. J'aspire à devenir un ingénieur logiciel. 
+            Salut ! Je suis <strong>Ivan APEDO</strong>. 
+            Étudiant en ingénierie informatique et développeur fullstack. 
+            Je suis passionné autant par le développement frontend(web design)
+            que le développement backend. Le monde de la technologie me fascine énormément. 
             Je m'intéresse également au domaine de l'IOT (systèmes embarqués). 
             Je travaille quotidiennement pour améliorer mes compétences.
           </h3>
