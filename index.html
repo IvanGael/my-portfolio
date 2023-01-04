@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Portfolio - Ivan APEDO</title>
-  <link href="images/image01.svg"" rel="icon">
+  <link href="images/developpement-de-jeu.png"" rel="icon">
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
@@ -41,11 +41,11 @@
           </span>
           <span>Formations</span>
         </a>
-        <a class="navbar-item" href="#projets">
+        <a class="navbar-item" href="#réalisations">
           <span class="icon">
             <i class="fas fa-th-list"></i>
           </span>
-          <span>Projets</span>
+          <span>Réalisations</span>
         </a>
         <a class="navbar-item" href="#contact">
           <span class="icon">
@@ -89,12 +89,18 @@
           </h3>
         </p>
         <br>
-        <a href="https://drive.google.com/file/d/1x0ATdcc7RI4AtgDuE3AaApYXFuIAT6ta/view?usp=share_link" class="button is-link is-medium" target="_blank">
+        <!-- <a href="https://drive.google.com/file/d/1x0ATdcc7RI4AtgDuE3AaApYXFuIAT6ta/view?usp=share_link" class="button is-link is-medium" target="_blank">
           <span class="icon">
             <i class="fas fa-file-alt"></i>
           </span>
           <span>Mon CV</span>
-        </a>
+        </a> -->
+        <button class="button is-link is-medium is-rounded js-modal-trigger" data-target="modal-js-cv">
+          <span class="icon">
+            <i class="fas fa-file-alt"></i>
+          </span>
+          <span>Mon CV</span>
+        </button>
       </div>
 
     </div>
@@ -290,10 +296,10 @@
   </section>
 
   <!-- Portfolio -->
-  <section class="section" id="projets">
+  <section class="section" id="réalisations">
     <div class="container">
       <div class="section-heading">
-        <h3 class="title is-2">Projets</h3>
+        <h3 class="title is-2">Quelques réalisations</h3>
       </div>
       <br>
 
@@ -306,8 +312,9 @@
                 <p class="card-header-title">
                   <span>Blog</span>
                   <span class="is-pulled-right">
-                    <span class="tag is-default">Web</span>
-                    <!-- <span class="tag is-danger">WIP</span> -->
+                    <span class="tag is-default">#web</span>
+                    <span class="tag is-link">#react</span>
+                    <span class="tag is-warning">#firebase</span>
                   </span>
                 </p>
               </header>
@@ -315,21 +322,28 @@
                 <figure class="image">
                   <img src="images/pg1.jpg" alt="pg1">
                 </figure>
+                <article >
+                  <p>
+                    Il s'agit d'un blog
+                  </p>
+                </article>
               </div>
               <footer class="card-footer">
-                <button class="button is-warning js-modal-trigger card-footer-item" data-target="modal-js-pg1">
+                <!-- <button class="button is-warning js-modal-trigger card-footer-item" data-target="modal-js-pg1">
                   <span class="icon">
                     <i class="fa fa-book"></i>
                   </span>
                   <span>Détails</span>
-                </button>
-                <a href="https://github.com/IvanGael" >
-                  <button class="button is-danger card-footer-item">
-                    <span class="icon">
-                      <i class="fa fa-code"></i>
-                    </span>
-                    <span>Code source</span>
-                  </button>
+                </button> -->
+                <a href="index.html" class="button is-danger card-footer-item">
+                  <span class="icon">
+                    <i class="fa fa-link"></i>
+                  </span>
+                </a>
+                <a href="https://github.com/IvanGael" class="button is-dark card-footer-item">
+                  <span class="icon">
+                    <i class="fa fa-code"></i>
+                  </span>
                 </a>
                 
               </footer>
@@ -342,7 +356,9 @@
                 <p class="card-header-title">
                   <span>TPI</span>
                   <span class="is-pulled-right">
-                    <span class="tag is-default">Web</span>
+                    <span class="tag is-default">#web</span>
+                    <span class="tag is-danger">#angular</span>
+                    <span class="tag is-primary">#springboot</span>
                   </span>
                 </p>
               </header>
@@ -350,21 +366,65 @@
                 <figure class="image">
                   <img src="images/pg4.jpg" alt="pg2">
                 </figure>
+                <article >
+                  <p>
+                    Ce projet est une application web de délivrance d'actes judiciaires
+                    développé lors de mon stage en 3<sup>ième</sup> année
+                  </p>
+                </article>
               </div>
               <footer class="card-footer">
-                <button class="button is-warning js-modal-trigger card-footer-item" data-target="modal-js-pg4">
+                <a href="index.html" class="button is-danger card-footer-item">
+                  <span class="icon">
+                    <i class="fa fa-link"></i>
+                  </span>
+                </a>
+                <a href="https://github.com/IvanGael" class="button is-dark card-footer-item">
+                  <span class="icon">
+                    <i class="fa fa-code"></i>
+                  </span>
+                </a>
+                
+              </footer>
+            </div>
+
+
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Note_taking_App</span>
+                  <span class="is-pulled-right">
+                    <span class="tag is-default">#web</span>
+                    <span class="tag is-warning">#js</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="images/note_taking_app.png" alt="note_taking_app">
+                </figure>
+                <article >
+                  <p>
+                    Il s'agit d'une application de prise de notes
+                  </p>
+                </article>
+              </div>
+              <footer class="card-footer">
+                <!-- <button class="button is-warning js-modal-trigger card-footer-item" data-target="modal-js-pg1">
                   <span class="icon">
                     <i class="fa fa-book"></i>
                   </span>
                   <span>Détails</span>
-                </button>
-                <a href="https://github.com/IvanGael" >
-                  <button class="button is-danger card-footer-item">
-                    <span class="icon">
-                      <i class="fa fa-code"></i>
-                    </span>
-                    <span>Code source</span>
-                  </button>
+                </button> -->
+                <a href="index.html" class="button is-danger card-footer-item">
+                  <span class="icon">
+                    <i class="fa fa-link"></i>
+                  </span>
+                </a>
+                <a href="https://github.com/IvanGael" class="button is-dark card-footer-item">
+                  <span class="icon">
+                    <i class="fa fa-code"></i>
+                  </span>
                 </a>
                 
               </footer>
@@ -380,7 +440,9 @@
                 <p class="card-header-title">
                   <span>Site e-commerce</span>
                   <span class="is-pulled-right">
-                    <span class="tag is-default">Web</span>
+                    <span class="tag is-default">#web</span>
+                    <span class="tag is-link">#react</span>
+                    <span class="tag is-primary">#nodejs</span>
                   </span>
                 </p>
               </header>
@@ -388,21 +450,22 @@
                 <figure class="image">
                   <img src="images/pg2.jpg" alt="pg2">
                 </figure>
+                <article >
+                  <p>
+                    Il s'agit d'un site e-commerce
+                  </p>
+                </article>
               </div>
               <footer class="card-footer">
-                <button class="button is-warning js-modal-trigger card-footer-item" data-target="modal-js-pg2">
+                <a href="index.html" class="button is-danger card-footer-item">
                   <span class="icon">
-                    <i class="fa fa-book"></i>
+                    <i class="fa fa-link"></i>
                   </span>
-                  <span>Détails</span>
-                </button>
-                <a href="https://github.com/IvanGael" >
-                  <button class="button is-danger card-footer-item">
-                    <span class="icon">
-                      <i class="fa fa-code"></i>
-                    </span>
-                    <span>Code source</span>
-                  </button>
+                </a>
+                <a href="https://github.com/IvanGael" class="button is-dark card-footer-item">
+                  <span class="icon">
+                    <i class="fa fa-code"></i>
+                  </span>
                 </a>
                 
               </footer>
@@ -413,7 +476,9 @@
                 <p class="card-header-title">
                   <span>Fiche App</span>
                   <span class="is-pulled-right">
-                    <span class="tag is-default">Web</span>
+                    <span class="tag is-default">#web</span>
+                    <span class="tag is-danger">#angular</span>
+                    <span class="tag is-warning">#firebase</span>
                   </span>
                 </p>
               </header>
@@ -421,21 +486,58 @@
                 <figure class="image">
                   <img src="images/pg5.png" alt="pg2">
                 </figure>
+                <article >
+                  <p>
+                    Il s'agit d'une application de gestion de fiches de paye, factures....
+                  </p>
+                </article>
               </div>
               <footer class="card-footer">
-                <button class="button is-warning js-modal-trigger card-footer-item" data-target="modal-js-pg5">
+                <a href="index.html" class="button is-danger card-footer-item">
                   <span class="icon">
-                    <i class="fa fa-book"></i>
+                    <i class="fa fa-link"></i>
                   </span>
-                  <span>Détails</span>
-                </button>
-                <a href="https://github.com/IvanGael" >
-                  <button class="button is-danger card-footer-item">
-                    <span class="icon">
-                      <i class="fa fa-code"></i>
-                    </span>
-                    <span>Code source</span>
-                  </button>
+                </a>
+                <a href="https://github.com/IvanGael" class="button is-dark card-footer-item">
+                  <span class="icon">
+                    <i class="fa fa-code"></i>
+                  </span>
+                </a>
+                
+              </footer>
+            </div>
+
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Chat_App</span>
+                  <span class="is-pulled-right">
+                    <span class="tag is-default">#web</span>
+                    <span class="tag is-link">#react</span>
+                    <span class="tag is-primary">#nodejs</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="images/chat.png" alt="chat_app">
+                </figure>
+                <article >
+                  <p>
+                    Il s'agit d'une application de chat entre amis
+                  </p>
+                </article>
+              </div>
+              <footer class="card-footer">
+                <a href="index.html" class="button is-danger card-footer-item">
+                  <span class="icon">
+                    <i class="fa fa-link"></i>
+                  </span>
+                </a>
+                <a href="https://github.com/IvanGael" class="button is-dark card-footer-item">
+                  <span class="icon">
+                    <i class="fa fa-code"></i>
+                  </span>
                 </a>
                 
               </footer>
@@ -450,7 +552,9 @@
                 <p class="card-header-title">
                   <span>Restaurant App</span>
                   <span class="is-pulled-right">
-                    <span class="tag is-default">Web</span>
+                    <span class="tag is-default">#web</span>
+                    <span class="tag is-link">#react</span>
+                    <span class="tag is-warning">#firebase</span>
                   </span>
                 </p>
               </header>
@@ -458,21 +562,65 @@
                 <figure class="image">
                   <img src="images/pg3.jpg" alt="pg2">
                 </figure>
+                <article >
+                  <p>
+                    Il s'agit d'une application de réservation de places
+                    de restaurants
+                  </p>
+                </article>
               </div>
               <footer class="card-footer">
-                <button class="button is-warning js-modal-trigger card-footer-item" data-target="modal-js-pg3">
+                <a href="index.html" class="button is-danger card-footer-item">
+                  <span class="icon">
+                    <i class="fa fa-link"></i>
+                  </span>
+                </a>
+                <a href="https://github.com/IvanGael" class="button is-dark card-footer-item">
+                  <span class="icon">
+                    <i class="fa fa-code"></i>
+                  </span>
+                </a>
+                
+              </footer>
+            </div>
+
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Meet_One</span>
+                  <span class="is-pulled-right">
+                    <span class="tag is-default">#web</span>
+                    <span class="tag is-danger">#angular</span>
+                    <span class="tag is-primary">#nodejs</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="images/meet_app.png" alt="meet_one">
+                </figure>
+                <article >
+                  <p>
+                    Il s'agit d'une application de gestion de réunions
+                  </p>
+                </article>
+              </div>
+              <footer class="card-footer">
+                <!-- <button class="button is-warning js-modal-trigger card-footer-item" data-target="modal-js-pg1">
                   <span class="icon">
                     <i class="fa fa-book"></i>
                   </span>
                   <span>Détails</span>
-                </button>
-                <a href="https://github.com/IvanGael" >
-                  <button class="button is-danger card-footer-item">
-                    <span class="icon">
-                      <i class="fa fa-code"></i>
-                    </span>
-                    <span>Code source</span>
-                  </button>
+                </button> -->
+                <a href="index.html" class="button is-danger card-footer-item">
+                  <span class="icon">
+                    <i class="fa fa-link"></i>
+                  </span>
+                </a>
+                <a href="https://github.com/IvanGael" class="button is-dark card-footer-item">
+                  <span class="icon">
+                    <i class="fa fa-code"></i>
+                  </span>
                 </a>
                 
               </footer>
@@ -491,7 +639,7 @@
   <section class="section" id="contact">
     <div class="container">
       <div class="section-heading">
-        <h3 class="title is-2">Contact</h3>
+        <h3 class="title is-2">Me contacter</h3>
       </div>
       <br>
 
@@ -502,14 +650,14 @@
               <div class="field">
                 <label class="label">Nom</label>
                 <div class="control">
-                  <input class="input" type="text" placeholder="votre nom" required>
+                  <input class="input" type="text" placeholder="nom" required>
                 </div>
               </div>
   
               <div class="field">
                 <label class="label">Email</label>
                 <div class="control has-icons-left">
-                  <input class="input" type="email" placeholder="votre mail" required>
+                  <input class="input" type="email" placeholder="mail" required>
                   <span class="icon is-small is-left">
                     <i class="fas fa-envelope"></i>
                   </span>
@@ -519,7 +667,7 @@
               <div class="field">
                 <label class="label">Message</label>
                 <div class="control">
-                  <textarea class="textarea" placeholder="Votre message" required></textarea>
+                  <textarea class="textarea" placeholder="message" required></textarea>
                 </div>
               </div>
   
@@ -550,7 +698,7 @@
     </div>
   </footer>
 
-  <div id="modal-js-pg1" class="modal">
+  <!-- <div id="modal-js-pg1" class="modal">
     <div class="modal-background"></div>
     <div class="modal-content">
       <p class="image is-4by3">
@@ -622,6 +770,14 @@
           C'est un projet pour la gestion de fiche de paye, factures....
         </div>
       </article>
+    </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+  </div> -->
+
+  <div id="modal-js-cv" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <iframe title="CV" src="images/cv/My-Cv_new.pdf" frameborder="1" width="600" height="450" loading="lazy" allowfullscreen></iframe>
     </div>
   <button class="modal-close is-large" aria-label="close"></button>
   </div>
